@@ -1,0 +1,188 @@
+.dashboard-login,
+.dashboard-login * {
+  box-sizing: border-box;
+}
+.dashboard-login {
+  background: #2148c0;
+  width: 1280px;
+  height: 720px;
+  position: relative;
+  overflow: hidden;
+}
+.bg {
+  position: absolute;
+  left: -362px;
+  top: -1px;
+  overflow: visible;
+}
+.form {
+  position: absolute;
+  inset: 0;
+}
+.username {
+  width: 300px;
+  height: 45px;
+  position: static;
+}
+.rectangle {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 300px;
+  height: 45px;
+  position: absolute;
+  left: 490px;
+  top: 330px;
+}
+.username2 {
+  color: #ffffff;
+  text-align: center;
+  font: 300 14px/20px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 541px;
+  top: 343px;
+}
+.user {
+  position: absolute;
+  left: 502px;
+  top: 343px;
+  overflow: visible;
+}
+.password {
+  width: 300px;
+  height: 45px;
+  position: static;
+}
+.rectangle2 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 300px;
+  height: 45px;
+  position: absolute;
+  left: 490px;
+  top: 395px;
+}
+.password2 {
+  color: #ffffff;
+  text-align: center;
+  font: 300 14px/20px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 541px;
+  top: 408px;
+}
+.lock {
+  position: absolute;
+  left: 502px;
+  top: 408px;
+  overflow: visible;
+}
+.login-btn {
+  width: 300px;
+  height: 45px;
+  position: static;
+}
+.rectangle3 {
+  background: #ffffff;
+  border-radius: 4px;
+  width: 300px;
+  height: 45px;
+  position: absolute;
+  left: 490px;
+  top: 483px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+.login {
+  color: #2148c0;
+  text-align: center;
+  font: 600 16px/20px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 613px;
+  top: 496px;
+}
+.forgot-password {
+  color: #ffffff;
+  text-align: center;
+  font: 500 16px "Montserrat", sans-serif;
+  position: absolute;
+  left: 644px;
+  top: 539px;
+}
+.group {
+  position: absolute;
+  left: 580px;
+  top: 161px;
+  overflow: visible;
+}
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-content {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  .modal.show {
+    display: block;
+  }
+  
+  .modal.show .modal-content {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+/* Errors */
+.error-container {
+    position: absolute;
+    top: 440px; 
+    left: 490px; 
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+  }
